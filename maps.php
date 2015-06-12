@@ -12,8 +12,13 @@
 // Prohibit direct script loading.
 defined( 'ABSPATH' ) || die( 'No direct script access allowed!' );
 
+if ( ! defined( 'IOSM_PLUGIN_DIR' ) )
+	define( 'IOSM_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
+
+require_once( IOSM_PLUGIN_DIR . "/includes/widget.php" );
+
 function maps() {
-	wp_register_script( 'maps', plugin_dir_url('maps') . 'mrsd-ios-maps/js/maps.js', array('jquery') );
+	wp_register_script( 'maps', IOSM_PLUGIN_DIR . 'js/maps.js', array('jquery') );
 	wp_enqueue_script( 'maps' );
 }
 
