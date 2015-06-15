@@ -75,5 +75,3 @@ class iOS_Maps_Widget extends WP_Widget {
 	}
 
 }
-
-add_action( 'widgets_init', create_function( 'ios_maps_register_widget', 'register_widget( "ios_maps_widget" );' ) );
