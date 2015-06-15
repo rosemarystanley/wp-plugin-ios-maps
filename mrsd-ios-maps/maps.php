@@ -41,3 +41,10 @@ function ios_maps( $atts, $content = null ) {
 }
 
 add_shortcode('ios_maps', 'ios_maps');
+
+// Register the widget
+function ios_maps_register_widget()  {
+	register_widget( "ios_maps_widget" );
+
+}
+add_action( 'widgets_init', 'ios_maps_register_widget');
