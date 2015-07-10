@@ -5,6 +5,6 @@ Simple Wordpress plugin to convert your address to open in Maps app on iOS devic
 Convert your addresses to open in Maps App for iOS devices. 
 
 ## Installation & Changelog
-See /mrsd-ios-maps/readme.txt
+See [readme.txt](https://github.com/mrsdohpaz/wp-plugin-ios-maps/blob/master/mrsd-ios-maps/readme.txt)
 
 
